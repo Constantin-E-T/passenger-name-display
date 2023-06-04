@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/passenger-name-display/static/css/main.4da62354.css",
+    "main.js": "/passenger-name-display/static/js/main.f1250488.js",
+    "index.html": "/passenger-name-display/index.html",
+    "main.4da62354.css.map": "/passenger-name-display/static/css/main.4da62354.css.map",
+    "main.f1250488.js.map": "/passenger-name-display/static/js/main.f1250488.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4da62354.css",
+    "static/js/main.f1250488.js"
+  ]
+}
