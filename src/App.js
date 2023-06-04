@@ -36,25 +36,29 @@ function App() {
   }, []);
 
   return (
-    <Container fluid style={{ backgroundColor: '#000000', height: '100vh' }}>
+    <Container fluid style={{ backgroundColor: '#000000', height: '100vh', color: '#ffffff' }}>
       {isLandscape ? (
-        <Row className="justify-content-center align-items-center" style={{ color: '#ffffff', fontSize: '10vw', height: '100vh', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+        <Row className="justify-content-center align-items-center" style={{ fontSize: '15vw', height: '100vh', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
           {name}
         </Row>
       ) : (
         <>
-          <Row>
-            <Col>
+          <Row className="justify-content-center">
+            <Col xs={12} className="text-center">
               <h1>Passenger Name Display</h1>
             </Col>
           </Row>
-          <Form onSubmit={handleSubmit}>
-            <Form.Group>
-              <Form.Label>Passenger Name</Form.Label>
-              <Form.Control type="text" value={name} onChange={handleChange} />
-            </Form.Group>
-            <Button type="submit">Submit</Button>
-          </Form>
+          <Row className="justify-content-center">
+            <Col xs={12} md={6}>
+              <Form onSubmit={handleSubmit} className="mt-4">
+                <Form.Group>
+                  <Form.Label>Passenger Name</Form.Label>
+                  <Form.Control type="text" value={name} onChange={handleChange} />
+                </Form.Group>
+                <Button type="submit" className="mt-2">Submit</Button>
+              </Form>
+            </Col>
+          </Row>
         </>
       )}
       <Row className="fixed-bottom">
