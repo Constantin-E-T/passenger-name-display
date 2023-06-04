@@ -38,11 +38,11 @@ function App() {
   return (
     <Container fluid style={{ backgroundColor: '#000000', height: '100vh', color: '#ffffff' }}>
       {isLandscape ? (
-        <Row className="justify-content-center align-items-center" style={{ fontSize: '15vw', height: '100vh', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+        <Row className="justify-content-center align-items-center" style={{ fontSize: '10vw', textTransform: 'capitalize' }}>
           {name}
         </Row>
       ) : (
-        <>
+        <Container className="d-flex flex-column justify-content-center" style={{ height: '100vh' }}>
           <Row className="justify-content-center">
             <Col xs={12} className="text-center">
               <h1>Passenger Name Display</h1>
@@ -59,7 +59,7 @@ function App() {
               </Form>
             </Col>
           </Row>
-        </>
+        </Container>
       )}
       <Row className="fixed-bottom">
         <Col>
